@@ -112,7 +112,7 @@ class PostController extends Controller
                 foreach ($request->images as $image) {
                     PostImage::create([
                         "post_id" => $id,
-                        "image" => $this->store_image($request, $image, "image_for_web"),
+                        "image" => store_image($request, $image, "image_for_web"),
                     ]);
                 }
             }

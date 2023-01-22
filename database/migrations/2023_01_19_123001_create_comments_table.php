@@ -18,7 +18,6 @@ return new class extends Migration
             $table->integer("post_id");
             $table->integer("user_id");
             $table->text("comment");
-            $table->date("date");
             $table->timestamps();
             $table->softDeletes();
         });
